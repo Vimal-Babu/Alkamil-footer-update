@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/logo-2x.png">
     <title>Alkhamil Advertisements</title>
     <link rel="stylesheet" href="assets/css/style.css?v1.5.0">
+    <link rel="stylesheet" href="assets/css/style-whatsapp.css">
 </head>
 
 <body class="nk-body " data-menu-collapse="lg">
@@ -260,77 +261,6 @@
                 d="M12.004 2c-5.514 0-10 4.486-10 10 0 1.766.468 3.498 1.36 5.01L2 22l5.134-1.348c1.45.793 3.073 1.21 4.87 1.21 5.514 0 10-4.486 10-10s-4.486-10-10-10zm0 18.182c-1.586 0-3.104-.431-4.436-1.248l-.317-.189-3.045.797.813-2.963-.206-.308C4.248 15.114 3.82 13.592 3.82 12c0-4.515 3.669-8.182 8.184-8.182 2.187 0 4.243.85 5.79 2.396a8.15 8.15 0 0 1 2.393 5.786c0 4.515-3.669 8.182-8.183 8.182z" />
         </svg>
     </a>
-
-    <!-- Beating CSS -->
-    <style>
-        .whatsapp-float {
-            position: fixed;
-            bottom: 50px;
-            right: 40px;
-            z-index: 9999;
-            background-color: #25D366;
-            color: white;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            animation: beat 1.5s infinite;
-        }
-
-        @keyframes beat {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.15);
-            }
-        }
-
-        .whatsapp-float::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border: 2px solid #25D366;
-            border-radius: 50%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            opacity: 0.6;
-            animation: ripple 1.5s infinite;
-        }
-
-        @keyframes ripple {
-            0% {
-                transform: scale(1);
-                opacity: 0.5;
-            }
-
-            70% {
-                transform: scale(2.2);
-                opacity: 0;
-            }
-
-            100% {
-                transform: scale(2.4);
-                opacity: 0;
-            }
-        }
-
-        /* Optional hover effect */
-        .whatsapp-float:hover {
-            animation: none;
-            transform: rotate(5deg) scale(1.2);
-            box-shadow: 0 0 12px #25D366;
-        }
-    </style>
 
     <script src="assets/js/bundle.js?v1.5.0"></script>
     <script src="assets/js/scripts.js?v1.5.0"></script>
